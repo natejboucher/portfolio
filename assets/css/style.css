@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html    {
+    scroll-behavior: smooth;
+}
+
+
 :root   {
     --primary-color: #616161;
     --secondary-color: #B1DFDE;
@@ -14,16 +19,25 @@
 body    {
     color: var(--tertiary-color);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--tertiary-color);
 }
 
 header  {
     display: flex;
     flex-wrap: wrap;
-    color: var(--tertiary-color);
     justify-content: space-between;
-    background-color: var(--nav-color);
+    background-color: var(--tertiary-color);
     top: 0;
+}
+
+header a    {
     text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+header nav  {
+    background-color: var(--nav-color);
+    border-radius: 0 0 5px 0;
 }
 
 header nav ul   {
@@ -38,4 +52,45 @@ header nav ul   {
 header nav ul li a  {
     padding: 5px;
     font-size: 5.0vw;
+}
+
+.hero   {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.logo   {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--tertiary-color);
+    width: 100%;
+    padding: 0 15px 0 15px;
+}
+
+.bio    {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.bio-img    {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.bio-img img    {
+    width: 100%;
+}
+
+.bio-text   {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 10px 20px 10px;
+    margin: 0 auto 20px auto;
+    background-color: var(--primary-color);
+    border-radius: 0 0 5px 5px;
 }

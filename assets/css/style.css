@@ -11,8 +11,9 @@ html    {
 
 :root   {
     --primary-color: #616161;
-    --secondary-color: #B1DFDE;
+    --secondary-color: #84b4b3;
     --tertiary-color: #EDF0F0;
+    --p-text: #d9dfdf;
     --nav-color: #8F8F8F;
     --projects-color: #424242;
 }
@@ -34,9 +35,8 @@ header  {
     top: 0;
 }
 
-header h4   {
+header h4  {
     display: flex;
-    justify-content: flex-end;
 }
 
 header a    {
@@ -151,9 +151,10 @@ header nav ul li a  {
 }
 
 .bio p {
-    padding-top: 5px;
+    padding-top: 7px;
     line-height: 1.0;
     font-size: 20px;
+    color: var(--p-text)
 }
 
 /* About me style end */
@@ -163,6 +164,65 @@ header nav ul li a  {
 .projects   {
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--projects-color);
-    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-project   {
+    background-image: url('../images/runbuddyimg.png');
+    background-size: cover;
+    width: 80%;
+    height: 150px;
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+    border: 5px solid var(--secondary-color);
+    border-radius: 0 0 5px 5px;
+}
+
+.feature-project-text   {
+    margin-top: auto;
+    background-color: var(--secondary-color);
+    padding: 5px 10px 0 10px ;
+    border-radius: 5px 5px 0 0;
+}
+
+.projects h4    {
+    color: var(--projects-color);
+    border-bottom: 1px solid var(--p-text);
+}
+
+.projects p {
+    color: var(--primary-color);
+    font-size: 10px;
+    text-align: center;
+}
+
+.project-icon-1, .project-icon-2, .project-icon-3, .project-icon-4   {
+    width: 40%;
+    height: 75px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid var(--secondary-color);
+    border-radius: 0 0 3px 3px;
+}
+
+
+
+.project-text   {
+    margin-top: auto;
+    background-color: var(--secondary-color);
+    padding: 3px 5px 0 5px ;
+    border-radius: 3px 3px 0 0;
+}
+
+.project-icon-1 {
+    background-image: url('../images/hoirseonimg.png');
+    background-size: cover;
+}
+
+.project-icon-2, .project-icon-3, .project-icon-4 {
+    background-color: var(--p-text);
 }

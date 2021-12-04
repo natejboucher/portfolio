@@ -175,6 +175,16 @@ header nav ul li a  {
     box-shadow: inset 0 0 20px var(--primary-color);
 }
 
+.projects a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+.featured-project a {
+    display: block;
+    height: 100%;
+}
+
 .projects h3    {
     font-size: 24px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -191,7 +201,16 @@ header nav ul li a  {
     border: 5px solid var(--secondary-color);
     border-radius: 0 0 5px 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    opacity: .8;
 }
+
+.featured-project:hover {
+    opacity: 1;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+
 
 .featured-project-text   {
     margin-top: auto;
@@ -220,6 +239,13 @@ header nav ul li a  {
     border: 3px solid var(--secondary-color);
     border-radius: 0 0 3px 3px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: .3s;
+    opacity: 0.8;
+}
+
+.project-icon-1:hover, .project-icon-2:hover, .project-icon-3:hover, .project-icon-4:hover    {
+    opacity: 1;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
 }
 
 

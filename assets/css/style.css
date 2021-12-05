@@ -17,6 +17,8 @@ html    {
     --nav-color: #8F8F8F;
     --contact-color: #424242;
     --contact-color-shadow: #2b2b2b;
+    --nav-shadow-color: rgba(131, 131, 131, 0.5);
+    --nav-shadow-hover: rgba(82, 82, 82, 0.5);
 }
 
 body    {
@@ -73,14 +75,39 @@ header nav ul li a  {
 
 .nav1   {
     text-align: left;
+    text-shadow: 0 0 5px var(--nav-shadow-color);
+    transform: rotate(-.03turn);
+    transition: 0.3s;
 }
+
+.nav1:hover    {
+    transform: rotate(-.02turn);
+    text-shadow: 0 0 10px var(--nav-shadow-hover);
+}
+
 
 .nav2   {
     text-align: center;
+    text-shadow: 0 0 5px var(--nav-shadow-color);
+    transform: rotate(-.03turn);
+    transition: 0.3s;
+}
+
+.nav2:hover     {
+    transform: rotate(-.02turn);
+    text-shadow: 0 0 10px var(--nav-shadow-hover);
 }
 
 .nav3   {
     text-align: right;
+    text-shadow: 0 0 5px var(--nav-shadow-color);
+    transform: rotate(-.03turn);
+    transition: 0.3s;
+}
+
+.nav3:hover     {
+    transform: rotate(-.02turn);
+    text-shadow: 0 0 10px var(--nav-shadow-hover);
 }
 
 .logo   {
@@ -363,6 +390,7 @@ header nav ul li a  {
     }
 
     .logo img   {
+        margin-top: auto;
         margin-bottom: auto;
         border: none;
     }

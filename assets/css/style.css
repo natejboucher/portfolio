@@ -1,3 +1,4 @@
+/* universal styles */
 *   {
     margin: 0;
     padding: 0;
@@ -7,7 +8,6 @@
 html    {
     scroll-behavior: smooth;
 }
-
 
 :root   {
     --primary-color: #616161;
@@ -28,8 +28,7 @@ body    {
     box-shadow: inset 0 0 20px var(--nav-color);
 }
 
-/* Header/navigation style start */
-
+/* header/navigation style start */
 header  {
     display: flex;
     flex-wrap: wrap;
@@ -85,7 +84,6 @@ header nav ul li a  {
     text-shadow: 0 0 10px var(--nav-shadow-hover);
 }
 
-
 .nav2   {
     text-align: center;
     text-shadow: 0 0 5px var(--nav-shadow-color);
@@ -133,7 +131,6 @@ header nav ul li a  {
 /* Header/navigation style end */
 
 /* About me style start */
-
 .about-me   {
     display: flex;
     flex-wrap: wrap;
@@ -141,7 +138,6 @@ header nav ul li a  {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
 
 .bio    {
     display: flex;
@@ -191,7 +187,6 @@ header nav ul li a  {
 /* About me style end */
 
 /* projects style start */
-
 .projects   {
     display: flex;
     flex-wrap: wrap;
@@ -237,8 +232,6 @@ header nav ul li a  {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
 }
 
-
-
 .featured-project-text   {
     margin-top: auto;
     background-color: var(--secondary-color);
@@ -276,7 +269,6 @@ header nav ul li a  {
 }
 
 
-
 .project-text   {
     margin-top: auto;
     background-color: var(--secondary-color);
@@ -292,11 +284,9 @@ header nav ul li a  {
 .project-icon-2, .project-icon-3, .project-icon-4 {
     background-color: var(--p-text);
 }
-
 /* projects style end */
 
 /* contact me style start */
-
 .contact-section    {
     background-color: var(--contact-color);
     box-shadow: inset 0 0 20px var(--contact-color-shadow);
@@ -323,11 +313,9 @@ header nav ul li a  {
 .contact-section a  {
     color: var(--tertiary-color);
 }
-
 /* contact section style end */
 
 /* media queries */
-
 @media screen and (min-width: 768px)    {
     header  {
         justify-content: space-around;

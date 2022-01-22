@@ -281,7 +281,12 @@ header nav ul li a  {
     background-size: cover;
 }
 
-.project-icon-2, .project-icon-3, .project-icon-4 {
+.project-icon-2  {
+    background-image: url('../images/fridgetofeast.png');
+    background-size: cover;
+}
+
+.project-icon-3, .project-icon-4 {
     background-color: var(--p-text);
 }
 /* projects style end */

@@ -213,7 +213,7 @@ header nav ul li a  {
 }
 
 .featured-project   {
-    background-image: url('../images/runbuddyimg.png');
+    background-image: url('../images/weatherdashboard.png');
     background-size: cover;
     width: 80%;
     height: 150px;
@@ -286,8 +286,14 @@ header nav ul li a  {
     background-size: cover;
 }
 
-.project-icon-3, .project-icon-4 {
-    background-color: var(--p-text);
+.project-icon-3 {
+    background-image: url('../images/runbuddyimg.png');
+    background-size: cover;
+}
+
+.project-icon-4 {
+    background-image: url('../images/notetaker.png');
+    background-size: cover;
 }
 /* projects style end */
 
